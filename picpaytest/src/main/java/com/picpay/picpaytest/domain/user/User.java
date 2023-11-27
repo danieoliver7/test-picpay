@@ -19,7 +19,9 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String firstName;
+
     private String lastName;
 
     @Column(unique = true)
@@ -29,8 +31,9 @@ public class User {
     private String email;
 
     private String password;
+
     private BigDecimal balance;
 
     @Enumerated(EnumType.STRING)
-    private UserTipe userTipe;
+    private UserType userType;
 }

@@ -1,6 +1,6 @@
 package com.picpay.picpaytest.domain.user;
 
-public enum UserTipe {
+public enum UserType {
 
     COMMON,
     MERCHANT
